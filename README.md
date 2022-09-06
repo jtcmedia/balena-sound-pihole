@@ -9,4 +9,4 @@ then:
 `balena push pi4-balena-sound-and-pi-hole --registry-secrets .\secrets.yml
 
 To update each project (git submodule), run:
-`git submodule foreach git pull origin master`
+`git submodule update --remote --merge`
