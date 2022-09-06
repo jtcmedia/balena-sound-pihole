@@ -10,7 +10,8 @@ services:
     build: ./balena-pihole/pihole
     cap_add:
       - SYS_TTY_CONFIG
-      - NET_ADMIN
+      # only needed if using Pi-hole as DHCP Server
+      # - NET_ADMIN
     volumes:
       - "pihole_config:/etc/pihole"
       - "dnsmasq_config:/etc/dnsmasq.d"
@@ -60,7 +61,7 @@ services:
   sound-supervisor:
     build: 
       context: ./balena-sound
-      dockerfile: ./balena-sound/core/sound-supervisor/Dockerfile.template
+      dockerfile: ./core/sound-supervisor/Dockerfile.template
     network_mode: host
     labels:
       io.balena.features.balena-api: '1'
