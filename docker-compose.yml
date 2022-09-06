@@ -78,3 +78,10 @@ services:
       - NET_ADMIN
     labels:
       io.balena.features.dbus: 1
+  
+  # Run the LiFePO4wered Daemon
+  lifepo4wered-pi:
+    build: ./LiFePO4wered-Pi
+    privileged: true
+    labels:
+      io.balena.features.supervisor-api: 1

@@ -4,3 +4,6 @@
 [submodule "balena-pihole"]
 	path = balena-pihole
 	url = git@github.com:klutchell/balena-pihole.git
+[submodule "LiFePO4wered-Pi"]
+	path = LiFePO4wered-Pi
+	url = git@github.com:xorbit/LiFePO4wered-Pi.git
