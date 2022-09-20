@@ -45,7 +45,7 @@ services:
     labels:
       io.balena.features.supervisor-api: 1
     environment:
-      SET_HOSTNAME: pi4-balena-sound-and-pihole
+      SET_HOSTNAME: balena-sound-pihole
   
   # Core services
   # -- Required for a fully featured installation of balenaSound
